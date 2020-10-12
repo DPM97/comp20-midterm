@@ -1,0 +1,113 @@
+/* use single css file for concurrency */
+
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px 5fr 1fr;
+  grid-template-columns: 2fr 5fr 3fr;
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "footer footer footer";
+  row-gap: 10px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    display: block;
+  }
+}
+
+footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 10px;
+}
+
+header {
+  grid-area: header;
+
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-family: 'Satisfy', cursive;
+}
+
+.home {
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+}
+
+.menuicon {
+  width: 50px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222222);
+  filter: drop-shadow(5px 5px 5px #222222);
+}
+
+nav {
+  grid-area: nav;
+  background-color: yellow;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact_container {
+  font-size: 20px;
+  margin: auto;
+  max-width: 500px;
+  height: 500px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius:2px;
+}
+
+.contact-row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-row i {
+  font-size: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.contact-row a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+
+.mapouter {
+  margin: auto;
+}
+
+.faq-row {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.faq-row p, .faq-row h3 {
+  margin: 0;
+}

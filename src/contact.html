@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page</title>
+    <style type="text/css">
+      body {
+        background-image: url("./assets/img/lakephotosmall.jpg");
+        background-size: cover;
+      }
+
+      @media only screen and (min-width: 740px) {
+        body {
+          background-image: url("./assets/img/lakephotomedium.jpg");
+          background-size: cover;
+        }
+      }
+      @media only screen and (min-width: 1170px) {
+        body {
+          background-image: url("./assets/img/lakephotolarge.jpg");
+          background-size: cover;
+        }
+      }
+
+      fieldset {
+        border: none;
+        margin-bottom: 40px;
+      }
+
+      fieldset legend {
+        text-align: center;
+        font-size: 50px;
+        color: grey;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/main.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img class="menuicon" src="./assets/img/globegraphic.png" />
+    </header>
+    <main class="container contact">
+      <fieldset class="row contact_container">
+        <legend>
+          <h2
+            style="
+              font-size: 50px;
+              color: #fff7e6;
+              text-shadow: 3px 3px #808080;
+            "
+          >
+            Contact Us
+          </h2>
+        </legend>
+        <div class="row contact-row">
+          <i class="fa fa-phone"></i><a href="tel:6176285000">(617) 628-5000</a>
+        </div>
+        <div class="row contact-row">
+          <i class="fa fa-envelope"></i
+          ><a href="mailto:lltdtravel@gmail.com">lltdtravel@gmail.com</a>
+        </div>
+        <div class="row contact-row">
+          <i class="fa fa-map-pin"></i
+          ><a href="https://maps.google.com/maps?q=419%20Boston%20Ave%2C%20Medford%2C%20MA%2002155&t=&z=15&ie=UTF8&iwloc=">419 Boston Ave, Medford, MA 02155</a>
+        </div>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="400"
+              height="150"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=419%20Boston%20Ave%2C%20Medford%2C%20MA%2002155&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://123movies-to.org">123movie</a>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 150px;
+              width: 400px;
+            }
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 150px;
+              width: 400px;
+            }
+          </style>
+        </div>
+      </fieldset>
+      <fieldset class="row contact_container">
+        <legend>
+          <h2
+            style="
+              font-size: 50px;
+              color: #fff7e6;
+              text-shadow: 3px 3px #808080;
+            "
+          >
+            Faq
+          </h2>
+        </legend>
+        <div class="row faq-row">
+          <h3>I am a question?</h3>
+          <p>I am a response. This is just bs text ignore me.</p>
+        </div>
+        <div class="row faq-row">
+          <h3>I am a question?</h3>
+          <p>I am a response. This is just bs text ignore me.</p>
+        </div>
+        <div class="row faq-row">
+          <h3>I am a question?</h3>
+          <p>I am a response. This is just bs text ignore me.</p>
+        </div>
+      </fieldset>
+    </main>
+    <footer>
+      <h4 style="font-size: 20px; color: #fff7e6">LLTD Travel</h4>
+    </footer>
+  </body>
+</html>
