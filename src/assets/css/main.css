@@ -75,7 +75,7 @@ nav {
   font-size: 20px;
   margin: auto;
   max-width: 500px;
-  height: 500px;
+  height: 550px;
   background-color: rgba(255,255,255,0.5);
   border-radius:2px;
 }
@@ -109,4 +109,13 @@ nav {
 
 .faq-row p, .faq-row h3 {
   margin: 0;
+}
+
+.faq_container {
+  font-size: 20px;
+  margin: auto;
+  max-width: 500px;
+  height: 500px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius:2px;
 }

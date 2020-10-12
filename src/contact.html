@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact/Faq</title>
     <style type="text/css">
       body {
         background-image: url("./assets/img/lakephotosmall.jpg");
         background-size: cover;
+        min-height: 1200px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        * {
+          overflow-x: hidden;
+        }
+        .contact {
+          width: 80%;
+        }
+
+        .contact_container,
+        .faq_container {
+          font-size: 15px !important;
+          margin: 0;
+        }
+
       }
 
       @media only screen and (min-width: 740px) {
@@ -75,39 +92,44 @@
         </div>
         <div class="row contact-row">
           <i class="fa fa-map-pin"></i
-          ><a href="https://maps.google.com/maps?q=419%20Boston%20Ave%2C%20Medford%2C%20MA%2002155&t=&z=15&ie=UTF8&iwloc=">419 Boston Ave, Medford, MA 02155</a>
+          ><a
+            href="https://maps.google.com/maps?q=419%20Boston%20Ave%2C%20Medford%2C%20MA%2002155&t=&z=15&ie=UTF8&iwloc="
+            >419 Boston Ave, Medford, MA 02155</a
+          >
         </div>
         <div class="mapouter">
           <div class="gmap_canvas">
             <iframe
-              width="400"
-              height="150"
+              width="200"
+              height="200"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?q=419%20Boston%20Ave%2C%20Medford%2C%20MA%2002155&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=tufts%20university&t=&z=11&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0"
             ></iframe
-            ><a href="https://123movies-to.org">123movie</a>
+            >
           </div>
           <style>
             .mapouter {
+              border-radius: 50% !important;
               position: relative;
               text-align: right;
-              height: 150px;
-              width: 400px;
+              height: 200px;
+              width: 200px;
             }
             .gmap_canvas {
+              border-radius: 50% !important;
               overflow: hidden;
               background: none !important;
-              height: 150px;
-              width: 400px;
+              height: 200px;
+              width: 200px;
             }
           </style>
         </div>
       </fieldset>
-      <fieldset class="row contact_container">
+      <fieldset class="row faq_container">
         <legend>
           <h2
             style="
