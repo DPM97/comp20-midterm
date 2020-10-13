@@ -20,6 +20,7 @@ body {
   font-family: 'Catamaran', sans-serif;
 }
 
+
 @media only screen and (max-width: 480px) {
   body {
     display: block;
@@ -57,6 +58,7 @@ main {
 }
 
 .menuicon {
+  padding: 10px;
   width: 50px;
   -webkit-filter: drop-shadow(5px 5px 5px #222222);
   filter: drop-shadow(5px 5px 5px #222222);
