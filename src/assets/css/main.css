@@ -47,6 +47,13 @@ h1 {
 
 h2 {
   font-family: 'Satisfy', cursive;
+  color: #fff7e6;
+  text-shadow: 3px 3px #808080;
+}
+
+h4 {
+  font-size: 20px;
+  color: #fff7e6;  
 }
 
 .home {
