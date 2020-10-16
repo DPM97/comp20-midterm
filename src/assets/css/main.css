@@ -141,6 +141,7 @@ nav {
 .centeredtree {
     position: absolute;
     width: 500px;
+    max-width: 95% !important;
     margin-left: 150px;
     margin-top: -400px;
     color: #fff7e6;
