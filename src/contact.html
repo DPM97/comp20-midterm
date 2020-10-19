@@ -18,6 +18,10 @@
           width: 80%;
         }
 
+        .contact_container {
+          height: 720px !important;
+        }
+
         .contact_container,
         .faq_container {
           font-size: 12px !important;
@@ -126,6 +130,17 @@
             }
           </style>
         </div>
+        <form id="mail" class="mail">
+          <label>Name</label>
+          <br/>
+          <input id="name"></input>
+          <br/>
+          <label id="message">Message</label>
+          <br/>
+          <textarea style="height: 70px"></textarea>
+          <br/>
+          <button type="submit">Contact</button>
+        </form>
       </fieldset>
       <fieldset class="row faq_container">
         <legend>
@@ -154,5 +169,12 @@
     <footer>
       <h4>LLTD Travel</h4>
     </footer>
+    <script>
+      document.getElementById('mail').addEventListener('submit', (e) => {
+        e.preventDefault();
+        let name = document.getElementById('name').value
+        document.getElementById('mail').innerHTML = `Thank you for submitting your request, ${name}!`
+      })
+    </script>
   </body>
 </html>

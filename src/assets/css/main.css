@@ -107,7 +107,7 @@ nav {
   font-size: 20px;
   margin: auto;
   max-width: 500px;
-  height: 550px;
+  height: 800px;
   background-color: rgba(255,255,255,0.5);
   border-radius:2px;
 }
@@ -131,6 +131,7 @@ nav {
 
 .mapouter {
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .faq-row {
@@ -169,4 +170,11 @@ nav {
     margin-top: -400px;
     color: #fff7e6;
     text-shadow: 1px 1px #808080;
+}
+
+.mail {
+  text-align: center;
+}
+mail input {
+  width: 100%;
 }
