@@ -73,7 +73,19 @@
   </head>
   <body>
     <header>
-      <img class="menuicon" src="./assets/img/globegraphic.png" />
+        <div class="topnav" id="myTopnav">
+             <a href = "index.html"><img class="menuicon" src="./assets/img/globegraphic.png" style="width:30px;height:30px;"></a>
+             <a href="africa.html">Africa </a>
+             <a href="asia.html" class = "active">Asia</a>
+             <a href="europe.html">Europe</a>
+             <a href="south_america.html">South America</a>
+             <a href="about.html">About Us</a>
+             <a href="contact.html">Contact Us</a>
+             <a href="sustainability.html">Sustainability</a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i>
+             </a>
+       </div>
     </header>
     <main class="home">
       <h1
@@ -124,4 +136,16 @@
       <h4>LLTD Travel</h4>
     </footer>
   </body>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+     </script>
+
 </html>
