@@ -6,15 +6,33 @@
     <style type="text/css">
       body {
         background-image: url("./assets/img/lakephotoblur.jpg");
-        background-size: cover;
         min-height: 1200px;
-        background-size: 120% 150% !important;
+        background-size: 120% 200% !important;
+        background-position: center;
+      }
+
+      footer {
+        bottom: 0 !important;
+        position: initial !important;
+      }
+
+      body {
+        overflow: scroll
       }
 
       @media only screen and (max-width: 480px) {
         * {
           overflow-x: hidden;
         }
+
+        body {
+          overflow-y: hidden !important;
+        }
+
+        footer {
+        bottom: initial !important;
+      }
+
         .contact {
           width: 80%;
         }
@@ -183,7 +201,7 @@
         </div>
       </fieldset>
     </main>
-    <footer style="bottom: initial !important">
+    <footer>
       <h4>LLTD Travel</h4>
     </footer>
     <script>
