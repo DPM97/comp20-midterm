@@ -104,6 +104,16 @@ nav {
   text-align: center;
 }
 
+.container {
+  padding-top: 30px;
+  padding-right: 35px !important;
+}
+
+.abt {
+  padding-right: 45px !important;
+}
+
+
 .contact_container {
   font-size: 20px;
   margin: auto;
