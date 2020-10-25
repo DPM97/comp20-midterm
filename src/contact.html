@@ -165,7 +165,7 @@
             }
           </style>
         </div>
-        <form id="mail" class="mail">
+        <form id="mail" class="mail" onsubmit="validate()">
           <label>Name</label>
           <br/>
           <input id="name"></input>
@@ -205,16 +205,17 @@
       <h4>LLTD Travel</h4>
     </footer>
     <script>
-        document.getElementById('mail').addEventListener('submit', (e) => {
-        var mess = document.getElementById('message').value;
-        if (mess == "") {
-            alert("Message cannot be blank");
-        } else {
-            e.preventDefault();
-            let name = document.getElementById('name').value
-            document.getElementById('mail').innerHTML = `Thank you for submitting your request, ${name}!`
-            }
-        });
+      function validate() {
+        var message_content = document.getElementById('message').value;
+        if (message_content == "") {
+          alert("Message cannot be blank");
+        }
+      }
+      document.getElementById('mail').addEventListener('submit', (e) => {
+        e.preventDefault();
+        let name = document.getElementById('name').value
+        document.getElementById('mail').innerHTML = `Thank you for submitting your request, ${name}!`
+      })
     </script>
   </body>
     <script src="./assets/java/myjava.js"></script>
