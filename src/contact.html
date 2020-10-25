@@ -165,7 +165,7 @@
             }
           </style>
         </div>
-        <form id="mail" class="mail" onsubmit="validate()">
+        <form id="mail" class="mail">
           <label>Name</label>
           <br/>
           <input id="name"></input>
@@ -174,7 +174,7 @@
           <br/>
           <textarea style="height: 70px"></textarea>
           <br/>
-          <button type="submit" onclick="validate()">Contact</button>
+          <button type="submit">Contact</button>
         </form>
       </fieldset>
       <fieldset class="row faq_container">
@@ -205,12 +205,6 @@
       <h4>LLTD Travel</h4>
     </footer>
     <script>
-      function validate() {
-        var message_content = document.getElementById('message').value;
-        if (message_content == "") {
-          alert("Message cannot be blank");
-        }
-      }
       document.getElementById('mail').addEventListener('submit', (e) => {
         e.preventDefault();
         let name = document.getElementById('name').value
