@@ -205,16 +205,16 @@
       <h4>LLTD Travel</h4>
     </footer>
     <script>
-      var mess = document.getElementById('message').value;
-      if (mess == "") {
-          alert("Message cannot be blank");
-      } else {
-          document.getElementById('mail').addEventListener('submit', (e) => {
+        document.getElementById('mail').addEventListener('submit', (e) => {
+        var mess = document.getElementById('message').value;
+        if (mess == "") {
+            alert("Message cannot be blank");
+        } else {
             e.preventDefault();
             let name = document.getElementById('name').value
             document.getElementById('mail').innerHTML = `Thank you for submitting your request, ${name}!`
+            }
         });
-      }
     </script>
   </body>
     <script src="./assets/java/myjava.js"></script>
