@@ -205,7 +205,7 @@
       <h4>LLTD Travel</h4>
     </footer>
     <script>
-      var mess = document.forms["mail"]["message"].value;
+      var mess = document.getElementById('message').value;
       if (mess == "") {
           alert("Message cannot be blank");
           return false;
