@@ -111,6 +111,7 @@ nav {
 
 .abt {
   padding-right: 45px !important;
+  overflow-y: none;
 }
 
 
