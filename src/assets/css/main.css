@@ -222,7 +222,7 @@ mail input {
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #015C09;
   color: white;
 }
 
@@ -232,7 +232,7 @@ mail input {
 
 
 .moreRow {
-  width: 100%;  
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
