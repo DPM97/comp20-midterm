@@ -167,7 +167,9 @@
           <br/>
           <input id="name"></input>
           <br/>
-          <label id="message">Message</label>
+          <label>Message</label>
+          <br/>
+          <input id="message"></input>
           <br/>
           <textarea style="height: 70px"></textarea>
           <br/>
@@ -207,12 +209,12 @@
         let name = document.getElementById('name').value
         let message = document.getElementById('message').value
         
-        if ((name == "") || (message == "")){
+        if ((name == "") || (message =="")){
            alert("Make sure to include both your name and a message!")
    
            return false
         }
-        
+       
         document.getElementById('mail').innerHTML = `Thank you for submitting your request, ${name}!`
       })
     </script>
