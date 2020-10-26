@@ -62,6 +62,25 @@
       rel="stylesheet"
     />
     <link href="./assets/css/main.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(() => {
+          $('#ab2').hide();
+          $('#ab1').show();
+          var count = 0;
+          $('#more').on('click', () => {
+              $('#ab1').fadeToggle();
+              $('#ab2').fadeToggle();
+              if (count == 0) {
+                  $('#img').attr('src','./assets/img/travelgoods.jpg');
+                  count++;
+              } else {
+                  $('#img').attr('src','./assets/img/balloons.jpg');
+                  count--;
+              }
+          })
+      })
+    </script>
   </head>
   <body style="margin-bottom: 50px !important; z-index: 1">
     <header>
@@ -92,9 +111,12 @@
         </legend>
         <div class="row contact-row">
           <img src="./assets/img/travelgoods.jpg" width="600px"/>
-          <p class="centeredtree">LLTD Travel is a travel agency founded in 1997 in order to allow people all around the world to expand their horizons and visit interesting locations.
-          We remain as committed as ever to allowing everyone we can the opportunity to explore exciting, exotic locales and experience most interesting places in the world! </p>
-
+          <p class="centeredtree" id="ab1">LLTD Travel is a travel agency founded in 1997 in order to allow people all around the world to expand their horizons and visit interesting locations.
+          We remain as committed as ever to allowing everyone we can the opportunity to explore exciting, exotic locales and experience the most interesting places in the world! </p>
+          <p class="centeredtree" id="ab2">LLTD Travel believes that travel can be a transformative experience, providing valuable memories and an increased perspective of the world and different cultures. LLTD Travel has partnerships with the very best hotels, restaurants, and tour guides to provide superior experiences. With LLTD travel you don't have to worry about the details, you can enjoy yourself and be in the moment more!</p>
+        </div>
+        <div class="row moreRow">
+          <button type="button" id="more">More</button>
         </div>
       </fieldset>
     </main>
