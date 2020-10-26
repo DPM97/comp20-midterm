@@ -207,10 +207,24 @@
         let name = document.getElementById('name').value
         let message = document.getElementById('message').value
         
-        if ((name == "") || (message =="")){
+        if ((name == "") && (message =="")){
            alert("Make sure to include both your name and a message!")
-   
+           name.focus()
+           message.focus()
+         
            return false
+        }
+        else if(name == ""){
+          
+          alert("Make sure to include your name!")
+           name.focus()
+          return false
+        }
+        else if(message == ""){
+          
+          alert("Make sure to include a message please!")
+           message.focus()
+          return false
         }
        
         document.getElementById('mail').innerHTML = `Thank you for submitting your request, ${name}!`
