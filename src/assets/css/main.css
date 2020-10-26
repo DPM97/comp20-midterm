@@ -267,4 +267,5 @@ mail input {
     background-color: rbga(255, 255, 255, 0.1);
     font-size: 20px;
     border: 2px solid #808080;
+    padding: 20px 30px;
 }
