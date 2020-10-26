@@ -207,19 +207,12 @@
         let name = document.getElementById('name').value
         let message = document.getElementById('message').value
         
-        if (name === ""){
-           alert("Make sure to enter your name!")
-          document.name.focus()
+        if ((name == "") || (message == "")){
+           alert("Make sure to include both your name and a message!")
    
-          return false
+           return false
         }
         
-        if (message === ""){
-          alert("Please make sure to write a message!")
-          document.message.focus()
-          
-          return false
-        }
         document.getElementById('mail').innerHTML = `Thank you for submitting your request, ${name}!`
       })
     </script>
