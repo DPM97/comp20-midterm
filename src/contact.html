@@ -205,6 +205,10 @@
       document.getElementById('mail').addEventListener('submit', (e) => {
         e.preventDefault();
         let name = document.getElementById('name').value
+        let message = document.getElementById('message').value
+        if (name === "" || message === ""){
+            alert("Make sure to enter your name and write a message")
+        }
         document.getElementById('mail').innerHTML = `Thank you for submitting your request, ${name}!`
       })
     </script>
