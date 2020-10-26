@@ -62,14 +62,18 @@
     <link href="./assets/css/main.css" type="text/css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    $(document).ready(() => {
-        $('#sus2').hide();
-        $('#sus1').show();
-        $('#more').on('click', () => {
-            $('#sus1').fadeToggle();
-            $('#sus2').fadeToggle();
+        $(document).ready(() => {
+            $('#sus2').hide();
+            $('#img2').hide();
+            $('#sus1').show();
+            $('#img1').show();
+            $('#more').on('click', () => {
+                $('#sus1').fadeToggle();
+                $('#sus2').fadeToggle();
+                $('#img1').fadeToggle();
+                $('#img2').fadeToggle();
+            })
         })
-    })
     </script>
   </head>
   <body>
@@ -100,7 +104,8 @@
           </h2>
         </legend>
           <div class="row contact-row sustainability">
-            <img src="./assets/img/trees.jpg" width="600px"/>
+            <img src="./assets/img/trees.jpg" width="600px" id="img1"/>
+            <img src="./assets/img/leafhold.jpg" width="600px" id="img2"/>
             <p class="centeredtree" id="sus1">LLTD Travel understands the impact of travel on the environment. A round-trip flight for one person from New York to Paris produces almost 2 tons of CO<sub>2</sub> emissions. <sup style="font-size:12px; color:#fff7e6"><a href="https://co2.myclimate.org/en/portfolios?calculation_id=3694734" style="color:#fff7e6" target="_blank">(Source)</a></sup> Therefore we are proudly partnered with The Seed Project. Every travel package purchase through LLTD Travel automatically includes a CO<sub>2</sub> offest, so you can travel freely knowing that you won't be harming the environment.</p>
             <p class="centeredtree" id="sus2">LLTD works with all of its local partners (hotels, restaurants, and tours) to ensure that the best sustainable practices are implemented. All LLTD restaurants source local food, and hotels implement best practices (e.g. towel and linen handling) to reduce their negative environmental impacts.</p>
           </div>
